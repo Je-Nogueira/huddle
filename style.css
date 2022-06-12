@@ -1,0 +1,169 @@
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+
+  --max-width-size: 1920px
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 3.6rem;
+}
+
+
+body.bg{
+  background: var(--violet);
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+p {
+  opacity: 0.8;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.header{
+  width: 20%;
+  height: 20%;
+  padding: 3rem 6rem;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  padding: 0 1.5rem;
+  margin-top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side img {
+  padding: 2.5rem 0 0 5rem;
+}
+
+.right-side {
+  margin-left: 2rem;
+  padding: 3rem;
+}
+
+.btn {
+  background-color: #fff;
+  border-radius: 5rem;
+  border: none;
+  box-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.3);
+  font-size: 1.6rem;
+  padding: 1.2rem 5rem;
+  color: var(--violet);
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+.btn:hover {
+  background-color: var(--magenta);
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 3rem;
+}
+
+.social-links a {
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 .5rem;
+  height: 2rem;
+  width: 2rem;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  border-color: var(--magenta);
+  color: var(--magenta);
+}
+
+@media screen and (max-width: 768px) {
+  body.bg{
+    background-color: var(--violet);
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header{
+    width: 10%;
+    height: 10%;
+    padding: 4rem 2rem;
+    width: 100vw;
+  }
+  .main{
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .left-side{
+  margin-right: 4rem;
+  
+  }
+  
+  h1{
+  font-size: 3rem;
+  text-align: center;
+  line-height: 4rem;
+  margin-bottom: 3rem;
+  }
+
+  p{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .right-side{
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+}
